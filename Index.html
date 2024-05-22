@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Stone Paper Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="words">
+            <ul>ROCK</ul>
+            <ul>PAPER</ul>
+            <ul>SCISSOR</ul>
+        </div>
+        <div class="scores">
+            <div id="com_score">
+                <p id="s1">Computer Score</p>
+                <span id="score1">0</span>
+            </div>
+            <div id="our_score">
+                <p id="s2">Your Score</p>
+                <span id="score2">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- kkndc -->
+    <div class="gesture">
+        <div class="stone">
+            <img class="phase1" id="bg_circle1" src="./Stone/Group 2.png" alt="stone" onclick="display(3)">
+            <img class="phase1" id="hand1" src="./Stone/icons8-fist-67 1.png" alt="" onclick="display(3)">
+            <!-- <img class ="line1" src="./Stone/Line 1.png" alt=""> -->
+        </div>
+
+        <div class="scissor">
+            <img src="./Scissors/Group 3.png" alt="" class="phase1" id="bg_circle2" onclick="display(1)">
+            <img src="./Scissors/17911 1.png" alt="" class="phase1" id="hand2" onclick="display(1)">
+        </div>
+        <div class="paper">
+            <img src="./Paper/Group 1.png" alt="" class="phase1" id="bg_circle3" onclick="display(2)">
+            <img src="./Paper/icons8-hand-64 1.png" alt="" class="phase1" id="hand3" onclick="display(2)">
+        </div>
+    </div>
+    <div class="hidden" id='container'> <!--container starts-->
+        <div class="icon_left">
+            <img src="./icons/Group 2 (1).png" alt="" class="s" id="sss">
+            <img src="./icons/Group 2.png" alt="" class="sc" id="scsc">
+            <img src="./icons/Group 4.png" alt="" class="p" id="ppp">
+
+        </div>
+        <div class="picking">
+            <p class="me">YOU PICKED</p> <!-- in display above the winning statement -->
+            <P class="pc">PC PICKED</P>
+        </div>
+        <div class="win">
+            <img src="./Greens/Ellipse 3.png" alt="" class="green2">
+            <img src="./Greens/Ellipse 4.png" alt="" class="green1">
+            <img src="./Greens/Ellipse 5.png" alt="" class="green3">
+        </div>
+        <div class="winwords">
+            <p class="word1">YOU WIN</p>
+            <P class="word2">AGAINST PC</P>
+            <button id="replay">PLAY AGAIN</button>
+        </div>
+        <div class="greenright">
+            <img src="./Greens/Ellipse 3.png" alt="" class="green22">
+            <img src="./Greens/Ellipse 4.png" alt="" class="green11">
+            <img src="./Greens/Ellipse 5.png" alt="" class="green33">
+        </div>
+        <div class="icon_right">
+            <img src="./icons/Group 2 (1).png" alt="" class="s1" id="s">
+            <img src="./icons/Group 2.png" alt="" class="sc1" id="sc">
+            <img src="./icons/Group 4.png" alt="" class="p1" id="p">
+        </div>
+    </div>
+    </div>
+    <div class="tie">
+        <p class="tie1">TIE UP</p>
+        <button id="replay1">RETRY</button>
+
+    </div>
+    <div class="lose">
+        <div class="losewords">
+            <p class="word1">YOU LOSE</p>
+            <P class="word2">AGAINST PC</P>
+            <button id="replay">PLAY AGAIN</button>
+        </div>
+    </div>
+    <button id="openPopupButton">Rules</button>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-btn" id="closePopupButton">X</button>
+            <h2>Games Rules</h2>
+            <ul class="ul">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>
+                    Agree ahead of time whether you'll count off"rock, paper, scissors, shoot" or just "rock, paper,
+                    scissors."</li>
+                <li>
+                    Use rock, paper, scissors to settle minor decisions or simpluy play to pass the time
+                </li>
+                <li>
+                    If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+
+</html>
